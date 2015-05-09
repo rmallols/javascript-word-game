@@ -25,7 +25,7 @@ app.controller('HomeCtrl', ['$scope', 'word', function ($scope, word) {
             validityClassObj = {};
         validityClassObj[validityClass] = true;
         return validityClassObj;
-    }
+    };
 
     function isWordValid(typedWord) {
         return typedWord && word.checkSyntacticValidity(typedWord, $scope.baseStringObj.hash)
