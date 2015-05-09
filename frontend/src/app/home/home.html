@@ -1,2 +1,16 @@
-<div hello-world></div>
-<a ui-sref="details">Go to the details page</a>
+<div class="home">
+
+    <h1 class="home-title">Welcome to the word game</h1>
+
+    <div class="home-sourceString">{{baseStringObj.token}}</div>
+
+    <input ng-model="word" class="home-input" ng-change="checkSyntacticValidity(word)"
+           ng-class="getValidityClasses(isWordValid)" />
+
+    <button ng-click="submitWord(word)" class="home-submit" ng-disabled="!isWordValid">
+        Submit word
+    </button>
+
+    <div class="home-msg"ng-class="getValidityClasses(isWordValid)" ng-show="msg">{{msg}}</div>
+
+</div>

@@ -19,15 +19,12 @@ var less;
 
     //Common src resources
     getScript(srcPath + '/common/app.js');
+    getScript(srcPath + '/common/word.js');
     getStyleSheet(srcPath + '/common/main.less');
 
     //Business logic src resources
     //Home
     getScript(srcPath + '/app/home/HomeCtrl.js');
-    getScript(srcPath + '/app/home/helloWorldDirective.js');
-    getScript(srcPath + '/app/home/helloWorldService.js');
-    //Details
-    getScript(srcPath + '/app/details/DetailsCtrl.js');
 
     //Less vendor library (has to be loaded at the end of the stylesheet chain
     getScript(vendorPath + '/less/less.js');

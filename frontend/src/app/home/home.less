@@ -1,0 +1,68 @@
+.home {
+  @big-string-size: 150%;
+  @big-string-spacing: 5px;
+  text-align: center;
+  padding-top: 10%;
+  font-family: arial, verdana;
+  font-size: 120%;
+  color: @font-color;
+
+  .home-title {
+    color: @highlight-color;
+  }
+
+  .home-sourceString {
+    font-size: @big-string-size;
+    letter-spacing: @big-string-spacing;
+    margin: 20px;
+  }
+
+  .home-input {
+    padding: 10px;
+    font-size: @big-string-size;
+    letter-spacing: @big-string-spacing;
+    color: @highlight-color;
+    text-align: center;
+    border: 1px solid @font-color;
+    outline: none;
+
+    &.valid {
+      border-color: @success-color;
+    }
+
+    &.invalid {
+      border-color: @error-color;
+    }
+  }
+
+  .home-realTimeSyntacticCheck {
+    margin: 10px;
+    font-size: 100%;
+  }
+
+  .home-submit {
+    font-size: 150%;
+    background-color: @highlight-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+
+    &[disabled] {
+      opacity: .5;
+      cursor: default;
+    }
+  }
+
+  .home-msg {
+
+    &.valid {
+      color: @success-color;
+    }
+
+    &.invalid {
+      color: @error-color;
+    }
+  }
+}
